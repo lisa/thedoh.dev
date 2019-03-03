@@ -1,1 +1,13 @@
 theme: jekyll-theme-midnight
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - index.md
+  - advent-of-code.md
+  - advent-of-code-2017.md
+  - advent-of-code-2018.md
+  - docker-musl-cross.md
+  - docker-static-python.md
