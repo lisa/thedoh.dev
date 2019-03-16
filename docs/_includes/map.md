@@ -1,5 +1,6 @@
 Site Map:
 
+* [Index](/index.html)
 * [musl-libc cross compiler container](/docker-musl-cross.html)
   * [Static Pyton container](/docker-static-python.html), which uses the [musl-libc cross compiler container](/docker-musl-cross.html)
 * [Advent of Code contributions](/adventofcode/index.html)
