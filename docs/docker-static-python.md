@@ -25,3 +25,5 @@ Alluded to earlier are usage examples:
 * [Python subprocess](https://github.com/lisa/docker-sample-static-python/tree/master/subprocess)
 * [execv](https://github.com/lisa/docker-sample-static-python/tree/master/execv)
 * [factory pattern with Flask](https://github.com/lisa/docker-sample-static-python/tree/master/factory)
+
+{% include map.md %}
