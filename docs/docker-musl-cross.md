@@ -11,3 +11,5 @@ The container is used to build the [Static Pyton container](./docker-static-pyth
 ## Other Uses
 
 I've attempted to get Ruby and Python 3.x to statically compile, but those have been put on hold.
+
+{% include map.md %}$$
