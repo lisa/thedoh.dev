@@ -1,3 +1,8 @@
+---
+title: docker-static-python
+parentcategory: docker
+category: docker-static-python
+---
 # docker-static-python
 
 As mentioned in the [docker-musl-cross](./docker-musl-cross.html) page, this `docker-static-python` container is a fork of a fork. The same upstream maintainer for the `docker-musl-libc` container has collection of [static binary containers](https://github.com/andrew-d/static-binaries), in which is the Python container. I created a [fork](https://github.com/lisa/static-binaries) of the upstream branch, inside which [I upgraded the Python version](https://github.com/lisa/static-binaries/tree/update-python-version) and demonstrated the ability to statically include other libraries into the Python binary.
@@ -25,5 +30,3 @@ Alluded to earlier are usage examples:
 * [Python subprocess](https://github.com/lisa/docker-sample-static-python/tree/master/subprocess)
 * [execv](https://github.com/lisa/docker-sample-static-python/tree/master/execv)
 * [factory pattern with Flask](https://github.com/lisa/docker-sample-static-python/tree/master/factory)
-
-{% include map.md %}

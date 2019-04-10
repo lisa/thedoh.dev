@@ -1,0 +1,22 @@
+<div>
+    {% if site.data.toc.toc[0] %}
+      {% for item in site.data.toc.toc %}
+        <p><a href="{{item.url}}">{{ item.title }}</a></p>
+          {% if item.subtoc[0] %}
+            <ul>
+              {% for entry in item.subtoc %}
+                  <li><a href="{{ entry.url }}">{{ entry.title }}</a>
+                    {% if entry.subtoc[0] %}
+                      <ul>
+                      {% for subentry in entry.subtoc %}
+                          <li><a href="{{ subentry.url }}">{{ subentry.title }}</a></li>
+                      {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endfor %}
+    {% endif %}
+    </div>
