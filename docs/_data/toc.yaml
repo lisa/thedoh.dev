@@ -1,5 +1,7 @@
 ---
 toc:
+- title: Main
+  url: "/index.html"
 - title: Docker-Related Projects
   subtoc:
   - title: docker-musl-libc
@@ -7,17 +9,6 @@ toc:
   - title: docker-static-python
     url: "/docker/docker-static-python.html"
   url: "/docker/docker.html"
-- title: Random Projects
-  url: "/random-projects.html"
-- title: Advent of Code
-  subtoc:
-  - title: Advent of Code 2017
-    url: "/adventofcode/2017/index.html"
-  - title: Advent of Code 2018
-    url: "/adventofcode/2018/index.html"
-  url: "/adventofcode/index.html"
-- title: Main
-  url: "/index.html"
 - title: Kubernetes
   subtoc:
   - title: Porting tektoncd/pipeline to arm64
@@ -27,3 +18,12 @@ toc:
   - title: Rock64 Kubernetes Cluster
     url: "/kubernetes/rock64-cluster.html"
   url: "/kubernetes/index.html"
+- title: Advent of Code
+  subtoc:
+  - title: Advent of Code 2017
+    url: "/adventofcode/2017/index.html"
+  - title: Advent of Code 2018
+    url: "/adventofcode/2018/index.html"
+  url: "/adventofcode/index.html"
+- title: Random Projects
+  url: "/random-projects.html"
