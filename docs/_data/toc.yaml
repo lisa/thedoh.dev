@@ -18,3 +18,12 @@ toc:
   url: "/adventofcode/index.html"
 - title: Main
   url: "/index.html"
+- title: Kubernetes
+  subtoc:
+  - title: Porting tektoncd/pipeline to arm64
+    url: "/kubernetes/tektoncd-pipeline.html"
+  - title: Bootstrapping Rock64 Kubernetes Cluster
+    url: "/kubernetes/bootstrap.html"
+  - title: Rock64 Kubernetes Cluster
+    url: "/kubernetes/rock64-cluster.html"
+  url: "/kubernetes/index.html"
