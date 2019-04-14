@@ -12,7 +12,7 @@ setrubyver:
 	then rvm use $(RUBYVER) ;\
 	fi
 
-serve: setrubyver $(SITEFILES)
+serve: toc setrubyver $(SITEFILES)
 	bundle exec jekyll serve
 
 build: $(SITEFILES)
