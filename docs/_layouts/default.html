@@ -17,16 +17,19 @@
       <header>
         <h1 class="header"><a href="/">Lisa's Writings</a></h1>
         {% include toc.html %}
+
      </header>
 
       <section>
         {{ content }}
+
+        <footer>
+          <p>{% include footer.html %}</p>
+          <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        </footer>
       </section>
 
-      <footer>
-        <p>{% include footer.html %}</p>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     {% if site.google_analytics %}
