@@ -207,7 +207,7 @@ spec:
             path: config.json
   steps:
     - name: dockerfile-build
-      image: thedoh/arm64-kaniko-executor:latest
+      image: thedoh/arm64-kaniko-executor:0.9.0
       command:
         - /kaniko/executor
       args:
