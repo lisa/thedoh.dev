@@ -139,7 +139,15 @@ Next is [awslabs/amazon-ecr-credential-helper](https://github.com/awslabs/amazon
 
 Finally, the `scratch` image is used as a base and binary objects are copied from the `builder` layer. (Note: A correspondingly small change was required to match up with the `amazon-ecr-credential-helper` change.)
 
-The image is built and tagged as `thedoh/arm64-cloudbuild:18.04`.
+The kaniko image is built and tagged as `thedoh/arm64-kaniko-executor:0.9.0` from a [modified Dockerfile](https://gist.github.com/lisa/c4acfd087387602f193bf2bc23ffb64d) (with the "debug" and "warmer" images ignored).
+
+Building the kaniko image wasn't the end of the story because as @MansM [points out](https://github.com/GoogleContainerTools/kaniko/issues/530#issuecomment-466060614) in [GoogleContainerTools/kaniko#530](https://github.com/GoogleContainerTools/kaniko/issues/530), one must "...specify the arch in [the] Dockerfile." 
+
+### Kaniko and Manifest Lists
+
+As of [7901c761](https://github.com/GoogleContainerTools/kaniko/commit/7901c76127bec751f16afc5ed6ce24d5db3fef1c), kaniko does not support container images with manifest lists (refer to [this blog post for more background](https://medium.com/@mauridb/docker-multi-architecture-images-365a44c26be6)), which are crucial for cross-platform container images that appear to share the same name. That is, intead of `thedoh/musl-cross:1.1.22-arm64` and `thedoh/musl-cross-1.1.22-amd64`, there is instead the single image `thedoh/musl-cross:1.1.22` that self-contains the information for *both* `aarch64` *and* `amd64` platforms.
+
+I opened a [pull request](https://github.com/GoogleContainerTools/kaniko/pull/646) to change the behaviour so that kaniko will attempt to use the manifest for the current platform, if it exists. This image is tagged as `thedoh/arm64-kaniko-executor:pr646`.
 
 ## Building [musl-cross](/docker/docker-musl-cross.html)
 
