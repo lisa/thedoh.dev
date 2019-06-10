@@ -10,15 +10,19 @@ One recurring theme I've run into while operating my [arm64 Kubernetes cluster](
 
 ## Images, A little background
 
-[Under the hood](https://github.com/opencontainers/image-spec/blob/master/image-index.md) the architecture(s) in the images are a list of architectures supported by the image. When one of my arm64 Kubernetes cluster nodes makes a request to an image registry (such as [quay.io](https://quay.io)) it asks for an arm64 image. The container registry looks at the `organization/image` metadata see if it is in fact an arm64 image. When Kubernetes attempts to run the image I see the familiar error:
+[Under the hood](https://github.com/opencontainers/image-spec/blob/master/image-index.md) the architecture(s) in container images are a list of manifests supported by the image. When my arm64 cluster asks for the `organization/image` image what it really wants to have happen is for the remote registry (such as [quay.io](https://quay.io)) to provide an image which has an arm64 manifest. This doesn't always happen.
+
+Once my node has the `organization/image`, it the local Docker daemon will inspect the manifest list within that image to find the arm64 one. If one doesn't exist, the first manifest entry is used, which often points to amd64-specific data. When that happens I see the familiar error:
 
     standard_init_linux.go:207: exec user process caused "exec format error"
 
-The image I want to run will not, because it doesn't contain any arm64 information and then I'm off to find an arm64 version, or to recompile/rebuild the image myself. It's a frustrating process, and when I wanted to write my own utility I wanted to be the change I wanted to see in the world and produce a multi-arch image.
+The image I want to run will not, because it doesn't contain any arm64 information. If I want to make it work I have to find an arm64 version, or to recompile/rebuild the image myself. It's a frustrating process, and when I wanted to write my own utility I wanted to be the change I wanted to see in the world and produce a multi-arch image.
 
 # Homespun Utility
 
-The utility is still in development (watch this space), but I'm doing early testing and from the start I want to create multi-arch artifacts so that my own cluster can pull the image as well as any amd64 cluster. I tried previously with the [docker-musl-cross](./docker-musl-cross.html) project by hand, but didn't really understand what was going on or why it worked. With this new utility I wanted to understand the inner workings of Docker's experimental [multi-platform images](https://blog.docker.com/2017/09/docker-official-images-now-multi-platform/).
+To be clear up front, the utility I'm writing isn't related at all to container images, or manifests, or even Kubernetes. All it's done so far is act as the catalyst for me to understand how these multi-arch containers work.
+
+While doing development (watch this space) of the utility I want to create multi-arch artifacts from the start so that my own cluster can pull the image as well as any amd64 cluster. (I know from personal experience that retrofitting this kind of build infrastructure can be painful.) I tried previously with the [docker-musl-cross](./docker-musl-cross.html) project by hand, but didn't really understand what was going on or why it worked. With this new utility I wanted to understand the inner workings of Docker's experimental [multi-platform images](https://blog.docker.com/2017/09/docker-official-images-now-multi-platform/).
 
 ## Making it Work With Docker Manifests
 
