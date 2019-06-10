@@ -22,5 +22,9 @@ build: $(SITEFILES)
 clean:
 	rm -rf _site
 
-toc: $(SITEFILES)
+toc: $(SITEFILES) setrubyver
 	ruby scripts/createtoc.rb $(DOCSDIR) $(MDFILES)
+
+.PHONY: installgems
+installgems: setrubyver
+	bundle install || true

@@ -1,3 +1,4 @@
+# This file was auto-generated at 2019-06-10 03:21:15 UTC. Do not edit.
 ---
 toc:
 - title: Main
@@ -8,6 +9,8 @@ toc:
     url: "/docker/docker-musl-cross.html"
   - title: docker-static-python
     url: "/docker/docker-static-python.html"
+  - title: Multi-Arch Container Images
+    url: "/docker/multi-arch.html"
   url: "/docker/docker.html"
 - title: Kubernetes
   subtoc:

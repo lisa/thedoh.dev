@@ -65,5 +65,6 @@ pages -= todelete
 list = pages.sort.map{|g| g.render}
 
 File.open(TOCFILE,"w") do |f|
+  f.print("# This file was auto-generated at #{Time.now.utc}. Do not edit.\n")
   f.print({"toc" => list}.to_yaml)
 end
