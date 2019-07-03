@@ -2,6 +2,8 @@
 title: docker-static-python
 parentcategory: docker
 category: docker-static-python
+description: |
+  A Python fork of andrew-d/static-binaries's Pyhon 2.7.15 static-compiled into a container image with a discussion of method and inclusion of third party libraries (psutil).
 ---
 # docker-static-python
 

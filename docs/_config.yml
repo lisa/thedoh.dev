@@ -8,8 +8,14 @@ plugins:
   - jekyll-relative-links
   - jekyll-sitemap
   - jekyll-mentions
+  - jekyll-seo-tag
 relative_links:
   enabled: true
   collections: true
 include:
   - '**/**.md'
+
+author: thedoh
+twitter:
+  username: thedoh
+  card: summary

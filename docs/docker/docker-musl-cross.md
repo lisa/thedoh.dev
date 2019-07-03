@@ -2,6 +2,8 @@
 title: docker-musl-libc
 parentcategory: docker
 category: docker-musl-libc
+description: |
+  musl-libc static compiler in a container
 ---
 # docker-musl-libc
 

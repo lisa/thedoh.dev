@@ -3,6 +3,8 @@ title: Main
 parentcategory: ""
 category: index
 order: 1
+description: |
+  Home of Lisa's collection of stuff. Topics include ARM64, Kubernetes, Static compiled things with Docker.
 ---
 # Lisa's Collection of Stuff
 
