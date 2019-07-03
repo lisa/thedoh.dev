@@ -2,6 +2,8 @@
 title: Advent of Code 2018
 parentcategory: advent-of-code
 category: advent-of-code-2018
+description: |
+  Advent of Code 2018 notes and link to code.
 ---
 # Advent of Code 2018
 

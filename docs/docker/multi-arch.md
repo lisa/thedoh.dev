@@ -2,6 +2,8 @@
 title: Multi-Arch Container Images
 parentcategory: "docker"
 category: multi-arch
+description: |
+  A discussion on how to build multi-architecture container images using Docker's "manifest" command, and why it is important to use these multi-arch images.
 ---
 
 # Multi-Arch Container Images

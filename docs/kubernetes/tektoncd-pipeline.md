@@ -2,6 +2,8 @@
 title: Porting tektoncd/pipeline to arm64
 parentcategory: "kubernetes"
 category: rock64-k8s
+description: |
+  Notes on porting tektoncd/pipeline to ARM64.
 ---
 
 

@@ -2,6 +2,8 @@
 title: Advent of Code
 parentcategory: ""
 category: advent-of-code
+description: |
+  Advent of Code notes and link to code.
 ---
 # Advent of Code
 
