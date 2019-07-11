@@ -8,7 +8,7 @@ description: |
 
 # Rock64 Kubernetes Cluster
 
-In early 2019 I built a three-node Kubernetes cluster on arm64 [Rock64 hardware](https://www.pine64.org/?page_id=7147). The cluster itself was purchased from [PicoCluster](https://www.picocluster.com/collections/pico-3/products/pico-3-rock64). For more information about bootstrapping, refer to [Bootstrapping Rock64 Kubernetes Cluster](./bootstrap.html).
+In early 2019 I built a three-node Kubernetes cluster on arm64 [Rock64 hardware](https://www.pine64.org/devices/single-board-computers/rock64/) (rev 2). The cluster itself was purchased from [PicoCluster](https://www.picocluster.com/collections/pico-3/products/pico-3-rock64). For more information about bootstrapping, refer to [Bootstrapping Rock64 Kubernetes Cluster](./bootstrap.html).
 
 ## Cluster Details
 
