@@ -3,6 +3,8 @@ title: Conference Talks
 parentcategory: ""
 category: "conftalks"
 order: 2
+description: |
+  All of the conference talks Lisa has given, with links to recordings and slides.
 ---
 
 # Conference Talks
