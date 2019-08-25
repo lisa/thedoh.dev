@@ -12,7 +12,7 @@ In early 2019 I built a three-node Kubernetes cluster on arm64 [Rock64 hardware]
 
 ## Cluster Details
 
-The cluster has three nodes: two workers, and one leader. The leader node provides persistent volumes to compute nodes via [NFS](./bootstrap.html#persistent-storage). I chose to use [MetalLB](https://metallb.universe.tf/) to provide ad-hoc load balancers for `Service`s running in the cluster.
+The cluster has three nodes: two workers, and one leader. [Storage](./bootstrap.html#persistent-storage) for the cluster is provided with [Rook](https://rook.io/) via [Ceph](https://ceph.com). I chose to use [MetalLB](https://metallb.universe.tf/) to provide ad-hoc load balancers for `Service`s running in the cluster.
 
 ## TektonCD-Pipeline
 
