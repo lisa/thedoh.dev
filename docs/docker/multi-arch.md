@@ -74,7 +74,7 @@ As [mentioned previously](#walking-through-docker-pull-manifest-list), Docker is
 In general, the steps to create the multi-arch container images is:
 
 1. Enable docker's [experimental client features](https://docs.docker.com/engine/reference/commandline/cli/#configuration-files)
-2. Build individual containers for all of your architectures (arm64, amd64, etc) and tag them with per-architecture identifiers
+2. Build individual images for all of your architectures (arm64, amd64, etc) and tag them with per-architecture identifiers
 3. Create the manifest with `docker manifest create`
 4. "Add" the individual, per-architecture images with `docker manifest annotate`.
 5. Push the resulting multi-arch image to the image registry with `docker manifest push`
@@ -95,6 +95,7 @@ ARCHES ?= arm64 amd64
 docker-build:
 	for a in $(ARCHES); do \
 		docker build --build-arg=GOARCH=$$a -t $(IMG):$$a-$(VERSION) . ;\
+		$(call set_image_arch,$(REGISTRY)/$(IMG):$$a-$(VERSION),$$a) ;\
 		docker tag $(IMG):$$a-$(VERSION) $(IMG):$$a-latest ;\
 	done
 
@@ -121,7 +122,34 @@ clean:
 		docker rmi $(IMG):$$a-latest || true ;\
 	done ;\
 	docker rmi $(IMG):latest || true ;\
-	rm -rf ~/.docker/manifests/$(shell echo $(REGISTRY)/$(IMG) | tr '/' '_')-$(VERSION) || true
+	rm -rf ~/.docker/manifests/$(shell echo $(REGISTRY)/$(IMG) | tr '/' '_' | tr ':' '-')-$(VERSION) || true
+
+# Set image Architecture in manifest and replace it in the local registry
+# 1 image:tag
+# 2 Set Architecture to
+define set_image_arch
+	cpwd=$$(pwd) ;\
+	set -o errexit ;\
+	set -o nounset ;\
+	set -o pipefail ;\
+	savedir=$$(mktemp -d) ;\
+	chmod 700 $$savedir ;\
+	mkdir -p $$savedir/change ;\
+	docker save $(1) > $$savedir/image.tar ;\
+	cd $$savedir/change ;\
+	tar xf ../image.tar ;\
+	jsonfile=$$(find $$savedir/change -name "*.json" -not -name manifest.json) ;\
+	origarch=$$(cat $$jsonfile | jq -r .architecture) ;\
+	if [[ $(2) != $$origarch ]]; then \
+		docker rmi $(1) $(redirect) ;\
+		echo "[set_image_arch] changing from $${origarch} to $(2) for $(1)" ;\
+		sed -i -e "s,\"architecture\":\"$${origarch}\",\"architecture\":\"$(2)\"," $$jsonfile ;\
+		tar cf - * | docker load $(redirect) ;\
+		cd .. ;\
+	fi ;\
+	cd $$cpwd ;\
+	\rm -rf -- $$savedir
+endef
 ```
 
 The intended usage is `make VERSION=someversion clean docker-build docker-push`, which will first clean out each build artifact prior to re-building and running the `docker manifest push` command.
