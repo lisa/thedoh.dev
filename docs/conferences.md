@@ -35,7 +35,17 @@ The talk was [recorded][dod18-recording]. [Slides for the event are available][d
 In October 2018 I was invited back to [ExploreTech][exploretech] to give the SLO talk. There is no recording, but the slightly [modified/updated slides are available][exploretech18-slides].
 
 
+### LISA19
+
+On October 21st, 2019, I gave a talk at LISA19. Slides can be found on [Speakerdeck][lisa19-slides]. Image credits can be found on my [conferences repository](https://github.com/lisa/conferences).
+
+Reference material:
+
+* Images built reside in [Docker Hub](https://hub.docker.com/r/thedoh/lisa19)
+* Sample source code, including Makefiles, demo script and "pull" binary, in [lisa/lisa19-containers](https://github.com/lisa/lisa19-containers)
+
 [exploretech]: https://www.meetup.com/ExploreTech-Toronto/ "ExploreTech Toronto Meetup"
 [dod18-slides]: https://speakerdeck.com/thedoh/slos-and-you-or-how-we-learned-to-stop-worrying-and-love-the-queue-length
 [dod18-recording]: https://www.youtube.com/watch?v=MB0u2-c-2zs
 [exploretech18-slides]: https://speakerdeck.com/thedoh/slo-creation-and-you-or-how-we-learned-to-stop-worrying-and-love-the-queue-length
+[lisa19-slides]: https://speakerdeck.com/thedoh/multi-architecture-container-images-why-bother-and-how-to
