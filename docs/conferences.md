@@ -37,7 +37,7 @@ In October 2018 I was invited back to [ExploreTech][exploretech] to give the SLO
 
 ### LISA19
 
-On October 21st, 2019, I gave a talk at LISA19. Slides can be found on [Speakerdeck][lisa19-slides]. Image credits can be found on my [conferences repository](https://github.com/lisa/conferences).
+On October 21st, 2019, I gave a talk at LISA19. Slides can be found on [Speakerdeck][lisa19-slides]. Image credits can be found on my [conferences repository](https://github.com/lisa/conferences). [Video recording is available at the LISA19 website][lisa19-video].
 
 Reference material:
 
@@ -49,3 +49,4 @@ Reference material:
 [dod18-recording]: https://www.youtube.com/watch?v=MB0u2-c-2zs
 [exploretech18-slides]: https://speakerdeck.com/thedoh/slo-creation-and-you-or-how-we-learned-to-stop-worrying-and-love-the-queue-length
 [lisa19-slides]: https://speakerdeck.com/thedoh/multi-architecture-container-images-why-bother-and-how-to
+[lisa19-video]: https://www.usenix.org/conference/lisa19/presentation/seelye
