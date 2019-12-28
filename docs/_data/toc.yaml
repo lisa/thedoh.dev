@@ -16,6 +16,8 @@ toc:
   url: "/docker/docker.html"
 - title: Kubernetes
   subtoc:
+  - title: Writing the CKA Exam with ADD or ADHD
+    url: "/kubernetes/add-cka.html"
   - title: Porting tektoncd/pipeline to arm64
     url: "/kubernetes/tektoncd-pipeline.html"
   - title: Bootstrapping Rock64 Kubernetes Cluster
