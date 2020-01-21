@@ -25,8 +25,7 @@ To date, this talk has been given twice.
 
 ### DevOpsDays Silicon Valley (2018)
 
-I had mentioned to Jennifer Davis, co-author of [Effective DevOps: Building a Culture of Collaboration, Affinity, and Tooling at Scale](http://shop.oreilly.com/product/0636920039846.do), my talk topic and she expressed interest. To fill a speaker slot at the last minute, she graciously invited me to present at the [two-day conference](https://devopsdays.org/events/2018-silicon-valley/welcome/). 
-
+I had mentioned to Jennifer Davis, co-author of [Effective DevOps: Building a Culture of Collaboration, Affinity, and Tooling at Scale](http://shop.oreilly.com/product/0636920039846.do), my talk topic and she expressed interest. To fill a speaker slot at the last minute, she graciously invited me to present at the [two-day conference](https://devopsdays.org/events/2018-silicon-valley/welcome/).
 
 The talk was [recorded][dod18-recording]. [Slides for the event are available][dod18-slides].
 
@@ -34,8 +33,7 @@ The talk was [recorded][dod18-recording]. [Slides for the event are available][d
 
 In October 2018 I was invited back to [ExploreTech][exploretech] to give the SLO talk. There is no recording, but the slightly [modified/updated slides are available][exploretech18-slides].
 
-
-### LISA19
+## LISA19
 
 On October 21st, 2019, I gave a talk at LISA19. Slides can be found on [Speakerdeck][lisa19-slides]. Image credits can be found on my [conferences repository](https://github.com/lisa/conferences). [Video recording is available at the LISA19 website][lisa19-video].
 
