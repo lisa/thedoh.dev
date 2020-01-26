@@ -42,9 +42,15 @@ Reference material:
 * Images built reside in [Docker Hub](https://hub.docker.com/r/thedoh/lisa19)
 * Sample source code, including Makefiles, demo script and "pull" binary, in [lisa/lisa19-containers](https://github.com/lisa/lisa19-containers)
 
+## DevConf.cz (2020)
+
+On January 26, 2020, I co-presented at DevConf.cz 2020 in Brno, Czech Republic with Naveen Malik. Our talk is titled [Implementing Microservices as Kubernetes Operators](https://devconfcz2020a.sched.com/event/YOxf/implementing-microservices-as-kubernetes-operators). Slides are available on [Speakerdeck][devconfcz2020-slides] and sample code in [GitHub.com/jewzaam/pod-operator][devconfcz2020-code].
+
 [exploretech]: https://www.meetup.com/ExploreTech-Toronto/ "ExploreTech Toronto Meetup"
 [dod18-slides]: https://speakerdeck.com/thedoh/slos-and-you-or-how-we-learned-to-stop-worrying-and-love-the-queue-length
 [dod18-recording]: https://www.youtube.com/watch?v=MB0u2-c-2zs
 [exploretech18-slides]: https://speakerdeck.com/thedoh/slo-creation-and-you-or-how-we-learned-to-stop-worrying-and-love-the-queue-length
 [lisa19-slides]: https://speakerdeck.com/thedoh/multi-architecture-container-images-why-bother-and-how-to
 [lisa19-video]: https://www.usenix.org/conference/lisa19/presentation/seelye
+[devconfcz2020-slides]: https://speakerdeck.com/jewzaam/implementing-microservices-as-kubernetes-operators
+[devconfcz2020-code]: https://github.com/jewzaam/pod-operator
