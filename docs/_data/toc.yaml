@@ -1,8 +1,13 @@
-# This file was auto-generated at 2019-07-20 14:24:07 UTC. Do not edit.
+# This file was auto-generated at 2020-06-05 11:48:41 UTC. Do not edit.
 ---
 toc:
 - title: Main
   url: "/index.html"
+- title: Systems Thinking
+  subtoc:
+  - title: How Dishes Fit Into Systems
+    url: "/systems-thinking/dishes.html"
+  url: "/systems-thinking/index.html"
 - title: Conference Talks
   url: "/conferences.html"
 - title: Docker-Related Projects
@@ -24,6 +29,8 @@ toc:
     url: "/kubernetes/bootstrap.html"
   - title: Rock64 Kubernetes Cluster
     url: "/kubernetes/rock64-cluster.html"
+  - title: Funky CRDs
+    url: "/kubernetes/funky-crds.html"
   url: "/kubernetes/index.html"
 - title: Advent of Code
   subtoc:
