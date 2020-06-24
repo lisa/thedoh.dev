@@ -1,4 +1,4 @@
-# This file was auto-generated at 2020-06-05 11:52:23 UTC. Do not edit.
+# This file was auto-generated at 2020-06-24 17:45:01 UTC. Do not edit.
 ---
 toc:
 - title: Main
@@ -35,4 +35,7 @@ toc:
     url: "/adventofcode/2018/index.html"
   url: "/adventofcode/index.html"
 - title: Random Projects
+  subtoc:
+  - title: Git Rebasing
+    url: "/git-rebasing.html"
   url: "/random-projects.html"
