@@ -2,6 +2,8 @@
 title: Git Rebasing
 parentcategory: "random-projects"
 category: git
+description: |
+  How to squash commits in a Git branch with interactive rebasing.
 order: 10
 ---
 
