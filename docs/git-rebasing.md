@@ -555,3 +555,31 @@ had been doing work?) with the above. Thus, force push:
      + 17be810...f971357 port-to-go -> port-to-go (forced update)
 
 The branch is said to have been rebased, or squashed.
+
+## Fixup
+
+There's an even easier way to discard all those commit messages. Did you notice this line? I missed it, and thanks to coworker Taylor I actually read all the information on the screen.
+
+```
+     21 # f, fixup <commit> = like "squash", but discard this commit's log message
+```
+
+Using this `fixup` option, the lines would instead read:
+
+``` 
+  1 pick ada71a9 This PR introduces a ground-up rewrite of the Python framework in Go. The rewrite aims to be functionally identical to the original Python webhook (except the rewrite uses `admissionregistration.k8s.io/v1` instead of `v1beta1`), keeping pre-exis    ting webhooks at the same URI. The original home for this was my in my personal github [lisa/k8s-webhook-framework](https://github.com/lisa/k8s-webhook-framework) for development.
+  2 fixup a5b315a PR feedback
+  3 fixup daa554d Remove cert injector portion
+  4 fixup 8f002ce regular-user: should allow ^system: too
+  5 fixup f676768 Re-add certinjector, use daemonset on master nodes
+  6 fixup b628992 When updating, set OldObject too
+  7 fixup d582b40 Unify interface
+  8 fixup 3f4d8ed Delete unused code
+  9 fixup ec3c050 Log response encoding errors
+ 10 fixup 80567bd Add user-validation webhook
+ 11 fixup e64cee2 remove errant printf in the test
+ 12 fixup 17be810 Updated SSS
+ 13
+```
+
+From here, there's no need to delete 11 commit messages. A nice handy shortcut. Thanks Taylor!
