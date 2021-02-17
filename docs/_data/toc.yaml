@@ -1,8 +1,13 @@
-# This file was auto-generated at 2020-06-24 17:45:01 UTC. Do not edit.
+# This file was auto-generated at 2021-02-17 02:28:38 UTC. Do not edit.
 ---
 toc:
 - title: Main
   url: "/index.html"
+- title: Systems Thinking
+  subtoc:
+  - title: How Dishes Fit Into Systems
+    url: "/systems-thinking/dishes.html"
+  url: "/systems-thinking/index.html"
 - title: Conference Talks
   url: "/conferences.html"
 - title: Docker-Related Projects
@@ -22,6 +27,8 @@ toc:
     url: "/kubernetes/tektoncd-pipeline.html"
   - title: Bootstrapping Rock64 Kubernetes Cluster
     url: "/kubernetes/bootstrap.html"
+  - title: Looping Back Ceph
+    url: "/kubernetes/loopback-ceph.html"
   - title: Rock64 Kubernetes Cluster
     url: "/kubernetes/rock64-cluster.html"
   - title: Funky CRDs
