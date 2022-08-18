@@ -46,6 +46,14 @@ Reference material:
 
 On January 26, 2020, I co-presented at DevConf.cz 2020 in Brno, Czech Republic with Naveen Malik. Our talk is titled [Implementing Microservices as Kubernetes Operators](https://devconfcz2020a.sched.com/event/YOxf/implementing-microservices-as-kubernetes-operators). Slides are available on [Speakerdeck][devconfcz2020-slides] and sample code in [GitHub.com/jewzaam/pod-operator][devconfcz2020-code].
 
+## Open Source SRE: Sharing how we Grow SRE Practices
+
+On August 18th, 2022 I presented a talk at DevConf.us in Boston, New York titled Open Source SRE: Sharing how we Grow SRE Practices. The talk, based on work at Red Hat, discusses the progress of SIG-SRE (a special interes group inside Red Hat for SRE topics) has spent 2022 producing material to level up SRE practices inside Red Hat. These materials are shared at Operate First's [operate-first/sre][operate-first-sre-git] repository, and will have a landing page soon.
+
+For more information about Operate First, refer to their [webpage][operate-first-web].
+
+The slides for this talk are [available in Github][opensource-sre-slides] in PDF form. A recording will be available soon.
+
 [exploretech]: https://www.meetup.com/ExploreTech-Toronto/ "ExploreTech Toronto Meetup"
 [dod18-slides]: https://speakerdeck.com/thedoh/slos-and-you-or-how-we-learned-to-stop-worrying-and-love-the-queue-length
 [dod18-recording]: https://www.youtube.com/watch?v=MB0u2-c-2zs
@@ -54,3 +62,6 @@ On January 26, 2020, I co-presented at DevConf.cz 2020 in Brno, Czech Republic w
 [lisa19-video]: https://www.usenix.org/conference/lisa19/presentation/seelye
 [devconfcz2020-slides]: https://speakerdeck.com/jewzaam/implementing-microservices-as-kubernetes-operators
 [devconfcz2020-code]: https://github.com/jewzaam/pod-operator
+[operate-first-web]: https://operate-first.cloud
+[operate-first-sre-git]: https://github.com/operate-first/sre
+[opensource-sre-slides]: "https://github.com/lisa/thedoh.dev/pdfs/devconf+us+2022+-+Open+Source+SRE.pdf"
