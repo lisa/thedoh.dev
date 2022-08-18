@@ -64,4 +64,4 @@ The slides for this talk are [available in Github][opensource-sre-slides] in PDF
 [devconfcz2020-code]: https://github.com/jewzaam/pod-operator
 [operate-first-web]: https://operate-first.cloud
 [operate-first-sre-git]: https://github.com/operate-first/sre
-[opensource-sre-slides]: "https://github.com/lisa/thedoh.dev/pdfs/devconf+us+2022+-+Open+Source+SRE.pdf"
+[opensource-sre-slides]: https://github.com/lisa/thedoh.dev/blob/master/pdfs/devconf%20us%202022%20-%20Open%20Source%20SRE.pdf
