@@ -10,7 +10,7 @@ description: |
 
 ## Prologue
 
-In early 2019 I (built a three-node Kubernetes cluster)[./rock64-cluster.html] based on Rock64 single board computers. It had one control-plane node and two worker nodes. As is often the case, the scope of the cluster grew to include a few more nodes. These nodes were a small number of Raspberry Pi 4Bs and an old x86_64 MacBook Pro. As the cluster grew, I wanted to add extra control-plane nodes to add redundancy to the somewhat flakey Rock64 node.
+In early 2019 I [built a three-node Kubernetes cluster](./rock64-cluster.html) based on Rock64 single board computers. It had one control-plane node and two worker nodes. As is often the case, the scope of the cluster grew to include a few more nodes. These nodes were a small number of Raspberry Pi 4Bs and an old x86_64 MacBook Pro. As the cluster grew, I wanted to add extra control-plane nodes to add redundancy to the somewhat flakey Rock64 node.
 
 It turns out, however, that adding extra control-plane nodes to an existing cluster that wasn't already set up for it at the start is quite hard.
 
