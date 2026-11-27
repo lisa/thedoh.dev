@@ -1,4 +1,4 @@
-# This file was auto-generated at 2024-09-08 02:44:55 UTC. Do not edit.
+# This file was auto-generated at 2026-11-27 22:22:20 UTC. Do not edit.
 ---
 toc:
 - title: Main
@@ -40,4 +40,6 @@ toc:
   subtoc:
   - title: Git Rebasing
     url: "/git-rebasing.html"
+  - title: Replacing the Telus NH20A with an X-ONU-SFPP in a Dream Machine SE
+    url: "/fiber.html"
   url: "/random-projects.html"
